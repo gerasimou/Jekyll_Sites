@@ -21,11 +21,33 @@ common-js:
   <body>
 
     {% include nav.html %}
-
+      
     <div role="main" class="container main-content">
-      {{ content }}
-    </div>
 
+        <div class="navbar navbar-custom">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    Please fill-in <a href="http://goo.gl/forms/Oi3aCAU2VO" target="_blank">this form</a> and give us your feedback.
+                </div>                                
+            </div>
+        </div>
+      
+        
+        {{ content }}
+
+      
+        <p></p>
+        <div class="navbar navbar-custom">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    Got an idea for a seminar? Or want to help out with the organisation?  <a href="mailto:simos@cs.york.ac.uk?subject=RS Seminars"> Email 
+                    us</a> and get involved!
+                </div>                                
+            </div>
+        </div>
+  </div>
+    
+        
     {% include footer.html %}
 
     {% include footer-scripts.html %}
