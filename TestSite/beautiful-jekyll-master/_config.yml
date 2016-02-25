@@ -149,6 +149,6 @@ prose:
 
 
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 10
 paginate_path: "archive/page:num"
 permalink: /:categories/:year/:slug/
