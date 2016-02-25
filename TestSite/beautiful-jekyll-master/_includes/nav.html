@@ -11,8 +11,10 @@
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
+        {{ site.baseurl }}
       <ul class="nav navbar-nav navbar-right">
 	    {% for link in site.navbar-links %}
+          {% capture t %}{{ link[1] }}{% endcapture %}
 	      {% capture before %}{{ link[1] | split: "://" | first }}{% endcapture %}
 	      {% capture after %}{{ link[1] | split: "://" | last }}{% endcapture %}
         <li>
